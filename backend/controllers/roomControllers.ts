@@ -111,12 +111,12 @@ export const createReviews = catchAsyncErrors(async (req: NextRequest) => {
   const room = await Room.findById(roomId);
 
   const isReviewed = room?.reviews?.find(
-    (review: IReview) => review?.user?.toString() === req?.user?.id.toString()
+    (review: IReview) => review?.user?.toString() === req?.user?._id.toString()
   );
 
   if (isReviewed) {
     room?.reviews?.forEach((review: IReview) => {
-      if (review?.user?.toString() === req?.user?.id.toString()) {
+      if (review?.user?.toString() === req?.user?._id.toString()) {
         review.comment = comment;
         review.rating = rating;
       }
