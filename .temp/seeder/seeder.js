@@ -45,7 +45,7 @@ var seedRooms = function () { return __awaiter(void 0, void 0, void 0, function 
         switch (_a.label) {
             case 0:
                 _a.trys.push([0, 4, , 5]);
-                return [4 /*yield*/, mongoose_1.default.connect("mongodb://127.0.0.1:27017/pillow")];
+                return [4 /*yield*/, mongoose_1.default.connect("mongodb+srv://josephinedjojo:<cLvakQpQOWJDCmVD>@pillow.qwk4ngi.mongodb.net/pillow?retryWrites=true&w=majority")];
             case 1:
                 _a.sent();
                 return [4 /*yield*/, room_1.default.deleteMany()];

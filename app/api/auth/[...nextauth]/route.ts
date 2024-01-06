@@ -1,6 +1,6 @@
 import dbConnect from "@/backend/config/dbConnect";
 import User, { IUser } from "@/backend/models/user";
-import { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest } from "next/server";
 import nextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
@@ -15,7 +15,7 @@ type Token = {
   user: IUser;
 };
 
-async function auth(req: NextApiRequest, res: NextApiResponse) {
+async function auth(req: NextRequest, res: any) {
   return await nextAuth(req, res, {
     session: {
       strategy: "jwt",

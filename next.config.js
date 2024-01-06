@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_URL: "http://localhost:3000",
+    API_URL: "http://127.0.0.1:3000",
     DB_LOCAL_URI: "mongodb://127.0.0.1:27017/pillow",
-    DB_URI: "",
+    DB_URI:
+      "mongodb+srv://josephinedjojo:<cLvakQpQOWJDCmVD>@pillow.qwk4ngi.mongodb.net/pillow?retryWrites=true&w=majority",
 
     CLOUDINARY_CLOUD_NAME: "dy9jdltpw",
     CLOUDINARY_API_KEY: "848126114554635",
@@ -24,8 +25,7 @@ const nextConfig = {
 
     STRIPE_SECRET_KEY:
       "sk_test_51OSO38HbCJr3AB7OOgiglsm5zXsCmODDPJEFWaoiIWOzeB6AbjddTP389hjAVWOkcFyThv3F6wbMifgRcBbA95UQ00LRRPEUEc",
-    STRIPE_WEBHOOK_SECRET:
-      "whsec_6926eac8531cd7a5684dd04246116f958cdb7c19bbd2a8eddf2468beb023c1a3",
+    STRIPE_WEBHOOK_SECRET: "whsec_0JV2x3t0Iq5z1LrJeZZMpEtgTgqBn473",
 
     NEXTAUTH_URL: "http://localhost:3000",
     NEXTAUTH_SECRET: "CHDSUIEFHCVIUSDEJZKJCFLDSK",

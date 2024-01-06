@@ -1,7 +1,7 @@
 import dbConnect from "@/backend/config/dbConnect";
 import { resetPassword } from "@/backend/controllers/authControllers";
 import { createEdgeRouter } from "next-connect";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 interface RequestContext {}
 
@@ -10,6 +10,9 @@ router.put(resetPassword);
 
 dbConnect();
 
-export async function PUT(request: NextRequest, ctx: RequestContext) {
-  return router.run(request, ctx);
+export async function PUT(
+  request: NextRequest,
+  ctx: RequestContext
+): Promise<NextResponse> {
+  return router.run(request, ctx) as Promise<NextResponse>;
 }
