@@ -4,7 +4,7 @@ const nextConfig = {
     API_URL: "https://pillow-ten.vercel.app",
     DB_LOCAL_URI: "https://pillow-ten.vercel.app",
     DB_URI:
-      "mongodb+srv://josephinedjojo:<cLvakQpQOWJDCmVD>@pillow.qwk4ngi.mongodb.net/pillow?retryWrites=true&w=majority",
+      "mongodb+srv://josephinedjojo:cLvakQpQOWJDCmVD@pillow.qwk4ngi.mongodb.net/pillow?retryWrites=true&w=majority",
 
     CLOUDINARY_CLOUD_NAME: "dy9jdltpw",
     CLOUDINARY_API_KEY: "848126114554635",
