@@ -2,7 +2,7 @@
 const nextConfig = {
   env: {
     API_URL: "https://pillow-ten.vercel.app",
-    DB_LOCAL_URI: "https://pillow-ten.vercel.app",
+    DB_LOCAL_URI: "mongodb://127.0.0.1:27017/pillow",
     DB_URI:
       "mongodb+srv://josephinedjojo:cLvakQpQOWJDCmVD@pillow.qwk4ngi.mongodb.net/pillow?retryWrites=true&w=majority",
 
@@ -27,7 +27,7 @@ const nextConfig = {
       "sk_test_51OSO38HbCJr3AB7OOgiglsm5zXsCmODDPJEFWaoiIWOzeB6AbjddTP389hjAVWOkcFyThv3F6wbMifgRcBbA95UQ00LRRPEUEc",
     STRIPE_WEBHOOK_SECRET: "whsec_0JV2x3t0Iq5z1LrJeZZMpEtgTgqBn473",
 
-    NEXTAUTH_URL: "http://localhost:3000",
+    NEXTAUTH_URL: "https://pillow-ten.vercel.app",
     NEXTAUTH_SECRET: "CHDSUIEFHCVIUSDEJZKJCFLDSK",
     GOOGLE_CLIENT_ID:
       "1004593914670-5a83sbhj6k9k23t0cpgnur2ffpln6kif.apps.googleusercontent.com",
