@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_URL: "https://pillow.vercel.app",
-    DB_LOCAL_URI: "https://pillow.vercel.app",
+    API_URL: "https://pillow-ten.vercel.app",
+    DB_LOCAL_URI: "https://pillow-ten.vercel.app",
     DB_URI:
       "mongodb+srv://josephinedjojo:<cLvakQpQOWJDCmVD>@pillow.qwk4ngi.mongodb.net/pillow?retryWrites=true&w=majority",
 
