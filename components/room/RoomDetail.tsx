@@ -74,10 +74,10 @@ const RoomDetails = ({ data }: Props) => {
 
       <RoomImageSlider images={room?.images} />
 
-      <div className="d-flex mx-4 overflow-x-auto overflow-y-hidden justify-content-center flex-nowrap text-light mt-3">
+       <div className="d-flex flex-wrap mx-2 justify-content-center text-light mt-3">
         <a
           onClick={() => handleSectionClick("description")}
-          className={`d-flex align-items-center flex-shrink-0 px-5 py-3 sec-header  ${
+          className={`d-flex align-items-center px-3 py-2 sec-header ${
             activeSection === "description"
               ? "text-muted rounded-top border border-bottom-0"
               : "text-muted border-bottom"
@@ -88,7 +88,7 @@ const RoomDetails = ({ data }: Props) => {
 
         <a
           onClick={() => handleSectionClick("room-location")}
-          className={`d-flex align-items-center flex-shrink-0 px-5 py-3 border-bottom sec-header ${
+          className={`d-flex align-items-center px-3 py-2 border-bottom sec-header ${
             activeSection === "room-location"
               ? "text-muted rounded-top border border-bottom-0"
               : "text-muted border-bottom"
@@ -96,9 +96,10 @@ const RoomDetails = ({ data }: Props) => {
         >
           <span className="me-2">Room Location</span>
         </a>
+
         <a
           onClick={() => handleSectionClick("faq")}
-          className={`d-flex align-items-center flex-shrink-0 px-5 py-3 border-bottom sec-header ${
+          className={`d-flex align-items-center px-3 py-2 border-bottom sec-header ${
             activeSection === "faq"
               ? "text-muted rounded-top border border-bottom-0"
               : "text-muted border-bottom"
